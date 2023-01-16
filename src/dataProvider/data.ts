@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import { faker } from "@faker-js/faker/locale/en";
 import { v4 as uuidv4 } from "uuid";
 
 import { Ticket, Message } from "../types";

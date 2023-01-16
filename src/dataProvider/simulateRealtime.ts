@@ -1,5 +1,5 @@
 import { DataProvider } from "react-admin";
-import { faker } from "@faker-js/faker";
+import { faker } from "@faker-js/faker/locale/en";
 
 export const simulateRealtime = async (dataProvider: DataProvider) => {
   await wait(3);
