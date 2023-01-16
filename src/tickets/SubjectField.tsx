@@ -16,7 +16,6 @@ export const SubjectField = (_props: { label: string }) => (
       reference="messages"
       target="ticket_id"
       sort={{ field: "timestamp", order: "DESC" }}
-      queryOptions={{ staleTime: 60 * 1000 }}
     >
       <TextField source="message" />
     </ReferenceOneField>
