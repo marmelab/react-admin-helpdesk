@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "data-generator-helpdesk": "1.0.1",
     "@faker-js/faker": "^7.6.0",
     "@react-admin/ra-navigation": "^4.3.3",
     "@react-admin/ra-realtime": "^4.3.0",

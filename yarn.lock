@@ -804,6 +804,14 @@ csstype@^3.0.2, csstype@^3.1.1:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
+data-generator-helpdesk@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/data-generator-helpdesk/-/data-generator-helpdesk-1.0.1.tgz#a602e4809b6b2bf43be3030e23661093e8a72d3e"
+  integrity sha512-1eQkOiFKchZGDDzabk3q83Mfn/VLZG7tgky2Dtx8RDt860IPgLJnUKzjzIwXeD8rO2mB3lYMF2mYOkB6kWfrCQ==
+  dependencies:
+    "@faker-js/faker" "^7.6.0"
+    uuid "^9.0.0"
+
 date-fns@^2.19.0:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"

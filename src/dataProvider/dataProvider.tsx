@@ -5,11 +5,11 @@ import {
   addRealTimeMethodsInLocalBrowser,
   addLocksMethodsBasedOnALockResource,
 } from "@react-admin/ra-realtime";
+import dataGenerator from "data-generator-helpdesk";
 
-import { data } from "./data";
 import { simulateRealtime } from "./simulateRealtime";
 
-const baseDataProvider = fakeRestProvider(data, true);
+const baseDataProvider = fakeRestProvider(dataGenerator(), true);
 
 const dataProviderWithSearch = addSearchMethod(baseDataProvider, {
   tickets: {
