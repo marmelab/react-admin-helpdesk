@@ -1,16 +1,21 @@
-import { Admin, Resource, RefreshIconButton } from "react-admin";
-import { ContainerLayout } from "@react-admin/ra-navigation";
-import { ReactQueryDevtools } from "react-query/devtools";
-import { Search } from "@react-admin/ra-search";
-import { Box } from "@mui/material";
 import KitchenIcon from "@mui/icons-material/Kitchen";
+import { Box } from "@mui/material";
+import { ContainerLayout } from "@react-admin/ra-navigation";
+import { Search } from "@react-admin/ra-search";
+import {
+  Admin,
+  RefreshIconButton,
+  Resource,
+  localStorageStore,
+} from "react-admin";
+import { ReactQueryDevtools } from "react-query/devtools";
 
-import tickets from "./tickets";
-import customers from "./customers";
-import products from "./products";
-import { dataProvider } from "./dataProvider";
-import { authProvider } from "./authProvider";
 import { ConnectionWatcher } from "./ConnectionWatcher";
+import { authProvider } from "./authProvider";
+import customers from "./customers";
+import { dataProvider } from "./dataProvider";
+import products from "./products";
+import tickets from "./tickets";
 
 const MyLayout = (props: any) => (
   <>
@@ -33,6 +38,7 @@ const App = () => (
   <Admin
     dataProvider={dataProvider}
     authProvider={authProvider}
+    store={localStorageStore(undefined, "HelpDesk")}
     title={
       <Box display="flex" gap={1} alignItems="center">
         <KitchenIcon /> Acme Refrigerator HelpDesk
