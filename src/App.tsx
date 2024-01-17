@@ -10,12 +10,13 @@ import {
 } from "react-admin";
 import { ReactQueryDevtools } from "react-query/devtools";
 
-import { ConnectionWatcher } from "./ConnectionWatcher";
-import { authProvider } from "./authProvider";
 import customers from "./customers";
-import { dataProvider } from "./dataProvider";
 import products from "./products";
 import tickets from "./tickets";
+import { MessageShow } from "./messages/MessageShow";
+import { authProvider } from "./authProvider";
+import { dataProvider } from "./dataProvider";
+import { ConnectionWatcher } from "./ConnectionWatcher";
 
 const MyLayout = (props: any) => (
   <>
@@ -55,6 +56,7 @@ const App = () => (
         `${record.firstName} ${record.lastName}`
       }
     />
+    <Resource name="messages" show={MessageShow} />
   </Admin>
 );
 

@@ -16,6 +16,10 @@ const dataProviderWithSearch = addSearchMethod(baseDataProvider, {
     label: "subject",
     redirect: "show",
   },
+  messages: {
+    label: "message",
+    redirect: "show",
+  },
   customers: {
     label: (record: any) => `${record.firstName} ${record.lastName}`,
     redirect: "show",
